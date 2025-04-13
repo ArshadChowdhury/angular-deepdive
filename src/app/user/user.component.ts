@@ -1,15 +1,22 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+
 
 
 @Component({
   selector: 'app-user',
-  standalone : true,
-  imports: [CommonModule,RouterLink, RouterOutlet],
+  imports: [],
   templateUrl: './user.component.html',
   styleUrl: './user.component.scss'
 })
 export class UserComponent {
+  
+  constructor(private route: ActivatedRoute) {}
 
+  ngOnInit() {
+    this.route.paramMap.subscribe(params => {
+      const id = params.get('id');
+      console.log(id); // Do something with the id
+    });
+  }
 }
