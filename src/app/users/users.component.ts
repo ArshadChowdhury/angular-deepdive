@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
   templateUrl: './users.component.html',
   styleUrl: './users.component.scss'
 })
-export class UserComponent {
+export class UsersComponent {
 
 }

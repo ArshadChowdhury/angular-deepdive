@@ -6,25 +6,26 @@ import { UserComponent } from './user/user.component';
 
 export const routes: Routes = [{
 
-    path : "",
-    title : "Home Page",
-    component : HomeComponent
-}, {
-
-    path : "users",
-    title : "Users Page",
-    component : UsersComponent
+    path: "",
+    title: "Home Page",
+    component: HomeComponent
 },
 {
 
-    path : "users/:id",
-    title : "Users Dynamic Page",
-    component : UserComponent
+    path: "users",
+    title: "Users Page",
+    component: UsersComponent
 },
-// {
-//     path: '**',
-//     title : "Error Not Found",
-//     component: NotFoundComponent
-//   }
+{
+
+    path: "users/:id",
+    title: "Users Dynamic Page",
+    component: UserComponent
+},
+    // {
+    //     path: '**',
+    //     title : "Error Not Found",
+    //     component: NotFoundComponent
+    //   }
 
 ];
